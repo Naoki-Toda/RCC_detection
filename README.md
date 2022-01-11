@@ -1,4 +1,4 @@
-# Automated_RCC_detection
+# Automated RCC detection
 
 This package provides trained models for automated Renal cell carcinoma (RCC) detection and segmentation in contrast-enhanced CT. <br>
 In order to improve the detection of small RCCs, two models are used. One is a 2D U-Net model for kidney segmentation, and the other is 3D U-Net model for tumor segmentation. These models were trained from scratch with the images from 6 institutions in Japan. <br>
