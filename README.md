@@ -16,7 +16,7 @@ Keras==2.2.5 <br>
 ### Input 
 The input is a set of directories in the directory named "cases_example". Each directory should contain 2D abdominal images of one patient in DICOM format. The images should be listed in order. Nephrogenic images or single-phase postcontrast images are recommended.<br>
 <br>
-![image](https://user-images.githubusercontent.com/87745605/149058762-1c5dee06-cf1d-42e0-8575-405f1587df5c.png)
+![image](https://user-images.githubusercontent.com/87745605/149059468-57e5f9b0-a89e-4623-b51f-9d0a3c0346c8.png)
 
 ### Preprocessing
 First, each DICOM image is converted to numpy format. From each 2Dimage, regions that corresponded to non-tissue areas are masked. Window level and window width are set to be 40 HU and 400 HU, respectively. Then, the intensity level is rescaled between 0 and 255, and the images are normalized so that the pixel values are between 0 and 1. After intensity scaling, the image is downsampled to 2×2 mm resolutions to reduce the computational complexity. Finally, the images are cropped to 160×160 pixels. 
